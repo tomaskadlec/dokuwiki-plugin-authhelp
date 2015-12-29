@@ -29,6 +29,8 @@ class action_plugin_authhelp extends DokuWiki_Action_Plugin
 {
     const CONF_HELP_PAGE = 'help_page';
 
+    const CONF_RENAME_LOCAL = 'rename_local';
+
     public function register(Doku_Event_Handler &$controller)
     {
         $controller->register_hook('HTML_LOGINFORM_OUTPUT', 'BEFORE', $this, 'alterLoginPageBefore');
@@ -56,6 +58,12 @@ class action_plugin_authhelp extends DokuWiki_Action_Plugin
 
         if (page_exists($helpId)) {
             print '<div class="login help">' . p_wiki_xhtml($helpId) . '</div>' .NL;
+        }
+
+        if (!empty($this->getConf(self::CONF_RENAME_LOCAL))) {
+            /** @var Doku_Form $form */
+            $form = $event->data;
+            $form->_content[0]['_legend'] = $this->getLang('login_local');
         }
     }
 

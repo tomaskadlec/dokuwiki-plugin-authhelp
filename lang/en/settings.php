@@ -7,3 +7,4 @@
  * @link  https://github.com/tomaskadlec/dokuwiki-plugin-authhelp Homepage
  */
 $lang['help_page'] = 'Help page';
+$lang['rename_local'] = 'Rename login form (to Local login)';

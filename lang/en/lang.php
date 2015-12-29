@@ -8,3 +8,4 @@
  */
 $lang['login_authshibboleth'] = 'Shibboleth SSO';
 $lang['login_authshibboleth_submit'] = 'Přihlásit se';
+$lang['login_local'] = 'Local login';

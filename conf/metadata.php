@@ -7,3 +7,4 @@
  * @link  https://github.com/tomaskadlec/dokuwiki-plugin-authhelp Homepage
  */
 $meta['help_page'] = array('string');
+$meta['rename_local'] = array('onoff');

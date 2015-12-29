@@ -7,3 +7,4 @@
  * @link  https://github.com/tomaskadlec/dokuwiki-plugin-authhelp Homepage
  */
 $lang['help_page'] = 'Stránka s nápovědou';
+$lang['rename_local'] = 'Přejmenovat formulář pro přihlášení (na Lokální přihlášení)';

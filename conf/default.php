@@ -14,4 +14,8 @@ $conf = array(
     
     // ID of a help page to display
     'help_page' => ':help:login',
+
+    // rename local login form
+    'rename_local' => false,
+
 );
