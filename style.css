@@ -1,0 +1,61 @@
+.login.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.login.container > .login.help {
+    order: 2;
+    margin-left: 2em;
+    flex-grow: 2;
+    text-align: left;
+}
+
+.login.container > form {
+    order: 1;
+    flex-grow: 1;
+}
+
+.login.container > form > div.no {
+    display: flex;
+    flex-direction: column;
+}
+
+.login.container > form label.block > span {
+    display: block;
+    text-align: left;
+}
+
+.login.container > form label.block > input[type='text'],
+.login.container > form label.block > input[type='password']{
+    width: 100%;
+}
+
+.login.container > form label.simple {
+    width: auto !important;
+    margin: auto auto 1em auto !important;
+}
+
+/*.login.container > form label.simple * {*/
+    /*display: inline;*/
+/*}*/
+
+.login.container > form > div.no > fieldset:first-of-type {
+    order: 99;
+}
+
+.login.container > form > div.no > fieldset {
+    margin-bottom: 1em;
+    width: auto;
+    min-width: 20em;
+}
+
+@media (max-width: 750px) {
+    .login.container {
+        flex-direction: column;
+    }
+
+    .login.container > .login.help {
+        margin: auto;
+        margin-top: 1em;
+    }
+}
